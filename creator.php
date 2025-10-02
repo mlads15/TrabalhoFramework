@@ -97,8 +97,7 @@ class Creator
             echo "<option value=''>Erro ao carregar bancos</option>";
         }
     }
-
-    // ... o restante dos métodos permanece igual ...
+    
     private function buscarTabelas()
     {
         $this->tabelas = $this->con->query("SHOW TABLES")->fetchAll(PDO::FETCH_ASSOC);
